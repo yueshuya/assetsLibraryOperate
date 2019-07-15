@@ -6,6 +6,72 @@
 //  Copyright © 2019 中证机构间报价系统股份有限公司. All rights reserved.
 //  设备权限管理
 
+/**
+ 升到iOS10之后，需要在 Info.plist 设置权限的有：
+ 麦克风权限：Privacy - Microphone Usage Description 是否允许此App使用你的麦克风？
+ 相机权限： Privacy - Camera Usage Description 是否允许此App使用你的相机？
+ 相册权限： Privacy - Photo Library Usage Description 是否允许此App访问你的媒体资料库？
+ 通讯录权限： Privacy - Contacts Usage Description 是否允许此App访问你的通讯录？
+ 蓝牙权限：Privacy - Bluetooth Peripheral Usage Description 是否许允此App使用蓝牙？
+ 语音转文字权限：Privacy - Speech Recognition Usage Description 是否允许此App使用语音识别？
+ 日历权限：Privacy - Calendars Usage Description
+ 定位权限：Privacy - Location When In Use Usage Description
+ 定位权限: Privacy - Location Always Usage Description
+ 位置权限：Privacy - Location Usage Description
+ 媒体库权限：Privacy - Media Library Usage Description
+ 健康分享权限：Privacy - Health Share Usage Description
+ 健康更新权限：Privacy - Health Update Usage Description
+ 运动使用权限：Privacy - Motion Usage Description
+ 音乐权限：Privacy - Music Usage Description
+ 提醒使用权限：Privacy - Reminders Usage Description
+ Siri使用权限：Privacy - Siri Usage Description
+ 电视供应商使用权限：Privacy - TV Provider Usage Description
+ 视频用户账号使用权限：Privacy - Video Subscriber Account Usage Description
+ 面部ID权限 ：Privacy - Face ID Usage Description
+ 保存图片到相册 ： Privacy - Photo Library Additions Usage Description
+ 
+ 
+ key 值：
+ <key>NSBluetoothPeripheralUsageDescription</key>
+ <string>需要获取蓝牙权限</string>
+ <key>NSCalendarsUsageDescription</key>
+ <string>日历</string>
+ <key>NSCameraUsageDescription</key>
+ <string>需要获取您的摄像头信息</string>
+ <key>NSContactsUsageDescription</key>
+ <string>需要获取您的通讯录权限</string>
+ <key>NSHealthShareUsageDescription</key>
+ <string>健康分享权限</string>
+ <key>NSHealthUpdateUsageDescription</key>
+ <string>健康数据更新权限</string>
+ <key>NSHomeKitUsageDescription</key>
+ <string>HomeKit权限</string>
+ <key>NSLocationAlwaysUsageDescription</key>
+ <string>一直定位权限</string>
+ <key>NSLocationUsageDescription</key>
+ <string>定位权限</string>
+ <key>NSLocationWhenInUseUsageDescription</key>
+ <string>使用app期间定位权限</string>
+ <key>NSMicrophoneUsageDescription</key>
+ <string>需要获取您的麦克风权限</string>
+ <key>NSPhotoLibraryUsageDescription</key>
+ <string>需要获取您的相册信息</string>
+ <key>NSRemindersUsageDescription</key>
+ <string>提醒事项</string>
+ <key>NSSiriUsageDescription</key>
+ <string>需要获取您的Siri权限</string>
+ <key>NSSpeechRecognitionUsageDescription</key>
+ <string>语音识别权限</string>
+ <key>NSVideoSubscriberAccountUsageDescription</key>
+ <string>AppleTV权限</string>
+ <key>NSAppleMusicUsageDescription</key>
+ <string>Add tracks to your music library.</string>
+ <key>NSMotionUsageDescription</key>
+ <string>运动与健身权限</string>
+ <key>NSPhotoLibraryAddUsageDescription</key>
+ <string>需要获取您的相册信息</string>
+ */
+
 #import "BJAuthorityManager.h"
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
